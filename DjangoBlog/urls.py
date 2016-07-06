@@ -20,6 +20,6 @@ from article import views
 urlpatterns = [
     # url(r'^grappelli/', include('grappelli.urls')), # grappelli URLS
     url(r'^admin/', admin.site.urls),
-    url(r'^(?P<my_args>\d+)/$',views.detail,name='detail'),
+    url(r'^(?P<id>\d+)/$',views.detail,name='detail'),
     url(r'^$',views.home,name='home'),
 ]
