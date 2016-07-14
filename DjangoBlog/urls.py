@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from article import views
+from django.conf import settings
 
 urlpatterns = [
     # url(r'^grappelli/', include('grappelli.urls')), # grappelli URLS
+    url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_PATH}),
     url(r'^admin/', admin.site.urls),
     url(r'^(?P<id>\d+)/$',views.detail,name='detail'),
     url(r'^$',views.home,name='home'),

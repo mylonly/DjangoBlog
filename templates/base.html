@@ -3,53 +3,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
     <title>Andrew Liu Blog</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-    <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
-    <style>
-        .webmaster-avatar{
-            position:relative;
-            float: center;
-            border-radius: 50px;
-            height: 100px;
-            width: 100px;
-        }
-    </style>
+    {% load staticfiles %}
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/base/style.css" rel="stylesheet">   
 </head>
-<body>
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-8">
-        <img class="webmaster-avatar" src="http://www.purecss.org/img/common/tilo-avatar.png">
-        <div class="header">
-            <h1 class="brand-title"><a href="{% url "home" %}">Andrew Liu Blog</a></h1>
-            <h2 class="brand-tagline">雪忆 - Snow Memory</h2>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">主页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">归档</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="https://github.com/Andrew-liu/my_blog_tutorial">Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-error pure-button" href="http://weibo.com/dinosaurliu">Weibo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">专题</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">About Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<body style="zoom:1">
+<div class="sidebar">
+    <div class="sidebar-header">
+        <img class="sidebar-header-avatar" src="/static/base/avatar.jpg">
+        <h1 class="blog-title">独自一人</h1>
     </div>
 
 
@@ -67,7 +36,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>      
 </div>
 
-</body>
+</body> 

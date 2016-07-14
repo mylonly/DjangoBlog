@@ -1,0 +1,26 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    width: 250px;
+    /* border-right: 1px solid #ebeff2; */
+    text-align: right;
+    -webkit-box-shadow: -1px 1px 6px rgba(0,0,0,0.35);
+    -moz-box-shadow: -1px 1px 6px rgba(0,0,0,0.35);
+    box-shadow: -1px 1px 10px rgba(0,0,0,1);
+    background: url(http://7xj5xl.com1.z0.glb.clouddn.com/pebbles.jpg);
+    background-size: 100% auto;
+    color: #fff;
+}
+.sidebar-header{
+    height: 250px;
+}
+.sidebar-header-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
