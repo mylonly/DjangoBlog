@@ -5,24 +5,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-    <title>Andrew Liu Blog</title>
-    {% load staticfiles %}
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/base/style.css" rel="stylesheet">   
+    <title>独自一人|独自Coding</title> 
+    <link href="/static/base/style.css" rel="stylesheet">
+    <link href="/static/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">   
 </head>
-<body style="zoom:1">
-<div class="sidebar">
-    <div class="sidebar-header">
-        <img class="sidebar-header-avatar" src="/static/base/avatar.jpg">
-        <h1 class="blog-title">独自一人</h1>
+<body class="home-home-template">
+<header class="main-header" style="background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <a class="branding" href="http://www.mylonly.com" title="独自一人|独自Coding">
+                    <img src="/static/base/logo.png" alt="独自一人">
+                </a>
+            </div>
+        </div>
     </div>
+</header>  
+<nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header">
+                    <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        <li class="nav-current" role="presentation"><a href="/">首页</a></li>
+                        <li role="presentation"><a href="http://wenda.ghostchina.com">论坛</a></li>
+                        <li role="presentation"><a href="/ghost-cheat-sheet/">快捷手册</a></li>
+                        <li role="presentation"><a href="http://docs.ghostchina.com/zh/">中文文档</a></li>
+                        <li role="presentation"><a href="/download/">下载</a></li>
+                        <li role="presentation"><a href="/about/">关于</a></li>
+                    </ul>   
+                </div>
+            </div>            
+        </div>
+    </div>
+</nav>  
 
 
-    <div class="content pure-u-1 pure-u-md-3-4">
+
+
+
+    <!--<div class="content pure-u-1 pure-u-md-3-4">
         <div>
             {% block content %}
             {% endblock %}
@@ -36,7 +64,10 @@
                 </div>
             </div>
         </div>
-    </div>      
+    </div>      -->
 </div>
-
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body> 
