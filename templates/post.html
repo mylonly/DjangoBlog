@@ -1,22 +1,59 @@
-#post.html
 {% extends "base.html" %}
 
 {% block content %}
-<div class="posts">
-        <section class="post">
-            <header class="post-header">
-                <h2 class="post-title">{{ post.title }}</h2>
+<div class="container">
+    <div class="row">
+        <main class="col-md-8 main-content">
+            <article class="post">
+                <div class="post-head">
+                    <h1 class="post-title">
+                        <a href="{% url "detail" id=post.id %}">{{post.title}}</a>
+                    </h1>
+                    <div class="post-meta">
+                        <span class="author">
+                            作者:
+                            <a href="/user/#">{{post.author.username}}</a>
+                        </span>
+                             •
+                             <time class="post-date">{{post.date_time}}</time>
+                    </div>
+                </div>
+                <div class="featured-media">
 
-                    <p class="post-meta">
-                        Time:  <a class="post-author" href="#">{{ post.date_time|date:"Y /m /d"}}</a> <a class="post-category post-category-js" href="#">{{ post.category }}</a>
-                    </p>
-            </header>
-
-                <div class="post-description">
+                </div>
+                <div class="post-content">
                     <p>
                         {{ post.content }}
                     </p>
                 </div>
-        </section>
-</div><!-- /.blog-post -->
+                <div class="post-permalink">
+                    <a href="#" class="btn btn-default">阅读全文</a>
+                </div>
+                <footer class="post-footer clearfix">
+                    <div class="pull-left tag-list">
+                        <i class="fa fa-folder-open-o"></i>
+                        <a href="">{{ post.category }}</a>
+                    </div>
+                    <div class="pull-right share"></div>
+                </footer>
+            </article>
+        </main>
+        <aside class="col-md-4 sidebar">
+            <div class="widget">
+                <h4 class="title">布告板</h4>
+                <div class="content community">
+                    <p>
+                        这里是通知板，发布一些重要信息!
+                    </p>
+                </div>
+            </div>
+            <div class="widget">
+                <!-- UY BEGIN -->
+                <div id="uyan_frame"></div>
+                <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2107094"></script>
+                <!-- UY END -->
+            </div>
+        </aside>
+    </div>
+</div>
 {% endblock %}
