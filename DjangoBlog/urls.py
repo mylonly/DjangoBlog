@@ -24,6 +24,7 @@ urlpatterns = [
     # url(r'^grappelli/', include('grappelli.urls')), # grappelli URLS
     url(r'^admin/', admin.site.urls),
     url(r'^(?P<id>\d+)/$',views.detail,name='detail'),
+    url(r'^page/(?P<page>\d+)',views.get_posts,name="get_posts"),
     url(r'^$',views.home,name='home'),
 ]
 
