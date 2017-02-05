@@ -6,9 +6,14 @@ from django.template import RequestContext, loader
 
 # Create your views here.
 
+page_count = 1
+
 def home(request):
-    post_list = Article.objects.all()
-    return render(request,'article/home.html',{'post_list':post_list})
+    return get_posts(request,0)
+
+def get_posts(request,page):
+    post_list = Article.objects.all()[page*page_count:(page+1)*page_count]
+    return render(request, 'article/home.html', {'post_list':post_list, 'page':page})
 
 def detail(request,id):
     try:
