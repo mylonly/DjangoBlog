@@ -1,6 +1,5 @@
-{% extends "article/base.html" %}
+{% extends "article/base.html" %} 
 {% load custom_markdown %}
-
 {% block content %}
 <div class="container">
     <div class="row">
@@ -14,9 +13,9 @@
                         <span class="author">
                             作者:
                             <a href="/user/#">{{post.author.username}}</a>
-                        </span>
-                             •
-                             <time class="post-date">{{post.date_time}}</time>
+                        </span> 
+                        •
+                        <time class="post-date">{{post.date_time}}</time>
                     </div>
                 </div>
                 <div class="featured-media">
@@ -24,7 +23,7 @@
                 </div>
                 <div class="post-content">
                     <p>
-                        {{ post.content | custom_markdown}}
+                        {{post.content|custom_markdown}}
                     </p>
                 </div>
                 <div class="post-permalink">
