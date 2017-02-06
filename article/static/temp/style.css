@@ -1,0 +1,19 @@
+.sidebar{
+    background-image: url(side.jpg);
+    height: 100%;
+    position: fixed;
+}
+
+.main {
+    clear: left;
+    background-color: blue;
+    height: 100%;
+}
+
+.sidebar .header{
+    height: 30%;
+}
+
+.sidebar .nav {
+    height: 20%;
+}
