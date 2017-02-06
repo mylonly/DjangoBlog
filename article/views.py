@@ -22,3 +22,6 @@ def detail(request,id):
     except Article.DoesNotExsit:
         raise Http404
     return render(request, 'article/post.html', {'post' : post})
+
+def message(request):
+    return render(request, 'article/message.html')

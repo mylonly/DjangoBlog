@@ -280,6 +280,7 @@ pre {
 }
 .post .post-head {
   text-align: center;
+  border-bottom: 1px solid #ebebeb;
 }
 .post .post-head .post-title {
   margin: 0;

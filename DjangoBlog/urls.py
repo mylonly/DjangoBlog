@@ -23,9 +23,10 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     # url(r'^grappelli/', include('grappelli.urls')), # grappelli URLS
     url(r'^admin/', admin.site.urls),
-    url(r'^(?P<id>\d+)/$',views.detail,name='detail'),
-    url(r'^page/(?P<page>\d+)',views.get_posts,name="get_posts"),
-    url(r'^$',views.home,name='home'),
+    url(r'^message.html',views.message, name="message"),
+    url(r'^(?P<id>\d+)/$', views.detail, name='detail'),
+    url(r'^page/(?P<page>\d+)', views.get_posts, name="get_posts"),
+    url(r'^$',views.home, name='home'),
 ]
 
 # urlpatterns += staticfiles_urlpatterns()
