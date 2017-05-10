@@ -1,0 +1,113 @@
+.sidebar{
+    width: 300px;
+    background-image: url(side.jpg);
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar-header{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.search {
+    position: relative;
+    height: 30px;
+    margin: 0px 20px;
+}
+
+.search input[type=text]{
+    width: 100%;
+    padding: 0 36px 0 10px;
+    height: 30px;
+    border: none;
+    color: #666;
+    background: #fff;
+    outline: none;
+    border-radius: 15px;
+}
+
+.search input[type=submit]{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-image: url(search_icon.png);
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.nav{
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.nav ul{
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+
+.nav ul li {
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    z-index: 2;
+    margin: 15px 0;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+.avatar-area{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top:75px;
+    left:75px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.blog-name{
+    font: normal 24px/30px "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    position: absolute;
+}
+
+
+.main {
+    padding-top: 10px;
+    margin-left: 20em;
+    background-color:lightgray;
+    height: 100%;
+}
+
+.article{
+    padding: 20px;
+    background: white;
+    border-radius: 2px;
+    margin: 0px 10px 10px 10px;
+}
+
+.sidebar .header{
+    height: 30%;
+}
+
+.sidebar .nav {
+    height: 20%;
+}

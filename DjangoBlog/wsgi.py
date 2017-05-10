@@ -12,8 +12,8 @@ import sys
 from django.core.wsgi import get_wsgi_application
 from django.conf import settings
 
-sys.path.append(settings.BASE_DIR)
-#sys.path.append("/data/website/blog.mylonly.com/")
+#sys.path.append(settings.BASE_DIR)
+sys.path.append("/root/projects/DjangoBlog/")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DjangoBlog.settings")
 
 application = get_wsgi_application()
